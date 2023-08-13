@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sender</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="screen join-screen active">
+        <div class="form">
+          <h2>Compartidor de archivos</h2>
+          <div class="form-input">
+            <button id="sender-start-con-btn"> Crear sala</button>
+          </div>
+          <div class="form-input" id="join-id">
+
+          </div>
+        </div>
+      </div>
+      <div class="screen fs-screen ">
+        <div class="file-input">
+          <label for="file-input">
+            Click para subir tus archivos
+          </label>
+          <input type="file" id="file-input">
+        </div>
+        <div class="file-list">
+          <div class="title">Archivos compartidos</div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script> -->
+    <script src="socket.io/socket.io.js"></script>
+    <script src="code.js"></script>
+
+  </body>
+
+</html>
